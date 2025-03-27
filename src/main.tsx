@@ -3,6 +3,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App.tsx';
+import { StateContextProvider } from './context/index.tsx';
 import './index.css';
 
 console.log(
@@ -30,7 +31,9 @@ createRoot(document.getElementById('root')!).render(
       }}
     >
       <BrowserRouter>
-        <App />
+        <StateContextProvider>
+          <App />
+        </StateContextProvider>
       </BrowserRouter>
     </PrivyProvider>
     ,
