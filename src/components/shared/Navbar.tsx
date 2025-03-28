@@ -70,7 +70,7 @@ const Navbar: React.FC = () => {
         />
         <div className='flex h-full w-[72px] cursor-pointer items-center justify-center rounded-[20px] bg-[#4acd8d]'>
           <img
-            src={'/public/icons/search.svg'}
+            src={'/icons/search.svg'}
             alt='search'
             className='h-[15px] w-[15px] object-contain'
           />
@@ -81,7 +81,7 @@ const Navbar: React.FC = () => {
         <CustomButton
           btnType='button'
           title={authenticated ? 'Log Out' : 'Log In'}
-          styles={authenticated ? 'bg-[#1dc071]' : 'bg-[#8c6dfd]'}
+          styles={authenticated ? 'bg-[#1dc071]' : 'bg-[#1ec070]'}
           handleClick={handleLoginLogout}
         />
       </div>
@@ -91,7 +91,7 @@ const Navbar: React.FC = () => {
           <IconHeartHandshake size={40} color='#1ec070' className='p-2' />
         </div>
         <img
-          src={'/public/icons/menu.svg'}
+          src={'/icons/menu.svg'}
           alt='menu'
           className='h-[34px] w-[34px] cursor-pointer object-contain'
           onClick={() => setToggleDrawer((prev) => !prev)}

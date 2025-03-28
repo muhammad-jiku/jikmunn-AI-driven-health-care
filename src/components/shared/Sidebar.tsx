@@ -78,7 +78,7 @@ const Sidebar: React.FC = () => {
         </div>
         <Icon
           name='theme'
-          imgUrl={'/public/icons/sun.svg'}
+          imgUrl={'/icons/sun.svg'}
           isActive={isActive}
           handleClick={() => {}}
           styles='bg-[#1c1c24] shadow-secondary'
